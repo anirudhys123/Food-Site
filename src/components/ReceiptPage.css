@@ -1,0 +1,79 @@
+.receipt-page {
+    padding: 20px;
+  }
+  
+  .receipt-header {
+    text-align: center;
+  }
+  
+  .receipt-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    margin-left: 20px;
+  }
+  
+  .cart-item-total {
+    margin-left: 20px;
+  }
+  
+  .order-summary {
+    margin-top: 20px;
+  }
+  
+  .summary-costs {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .delivery-details,
+  .delivery-option,
+  .payment-method {
+    margin-top: 20px;
+  }
+  
+  .delivery-type,
+  .delivery-location,
+  .delivery-option span,
+  .payment-method span {
+    display: block;
+    margin-top: 10px;
+  }
+  .b{
+    font-weight: bold;
+    font-size: 25px;
+  }

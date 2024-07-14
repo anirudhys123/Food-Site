@@ -1,0 +1,54 @@
+.card {
+  width: 28rem; /* You can adjust this value as needed */
+  /* border: 3px solid black;
+  border-radius: 25px;
+  text-decoration: none; */
+  display: block;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 16px 16px 16px gray;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  margin-top: 10px;
+  border-top-left-radius: 22px; /* Slightly rounded corners to match the card's radius */
+  border-top-right-radius: 22px;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card-title {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-body span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.large-icon {
+  font-size: 25px;
+  color: #ffc107; /* Assuming you want the stars to be gold */
+}
+
+.large-icon.bi-star-half {
+  position: relative;
+}
+
+.large-icon.bi-star-half:before {
+  content: "\f089";
+  position: absolute;
+  color: #ffc107; /* Ensure the half star is the same color as the full stars */
+}

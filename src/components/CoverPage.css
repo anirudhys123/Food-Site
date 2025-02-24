@@ -1,54 +1,106 @@
 .card {
-  width: 28rem; /* You can adjust this value as needed */
-  /* border: 3px solid black;
-  border-radius: 25px;
-  text-decoration: none; */
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 3px solid gray;
+  border-radius: 15px;
+  text-decoration: none;
   display: block;
   transition: box-shadow 0.3s ease;
-  text-decoration: none;
 }
 
 .card:hover {
-  box-shadow: 16px 16px 16px gray;
+  box-shadow: 8px 8px 16px gray;
 }
 
 .card-img-top {
   width: 100%;
-  height: auto; /* Ensures the image maintains its aspect ratio */
-  margin-top: 10px;
-  border-top-left-radius: 22px; /* Slightly rounded corners to match the card's radius */
-  border-top-right-radius: 22px;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card-body {
-  padding: 20px;
+  padding: 15px;
   background-color: #f8f9fa;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .card-title {
-  font-size: 1.7rem;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.card-body span {
-  display: inline-block;
-  margin-right: 10px;
+.rating-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
 }
 
 .large-icon {
-  font-size: 25px;
-  color: #ffc107; /* Assuming you want the stars to be gold */
+  font-size: 22px;
+  color: #ffc107;
 }
 
-.large-icon.bi-star-half {
-  position: relative;
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
-.large-icon.bi-star-half:before {
-  content: "\f089";
-  position: absolute;
-  color: #ffc107; /* Ensure the half star is the same color as the full stars */
+.ad img {
+  width: 100%;
+  max-width: 1100px; /* Ensures it doesn't stretch too much on larger screens */
+  height: auto;
+  border-radius: 10px; /* Adds smooth rounded corners */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .large-icon {
+    font-size: 20px;
+  }
+
+  .rating-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .large-icon {
+    font-size: 18px;
+  }
+
+  .rating-label {
+    font-size: 0.9rem;
+  }
 }

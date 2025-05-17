@@ -16,7 +16,7 @@ function RazorpayPayment({ total, storeName }) {
 
   const handleRazorpayPayment = () => {
     const options = {
-      key: 'rzp_test_k3e3fimeByvpbP',
+      key: 'rzp_test_9VqSlFsO3x2pPm',
       amount: total * 100, // Amount in paise
       currency: 'INR',
       name: storeName,
